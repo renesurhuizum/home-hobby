@@ -13,21 +13,66 @@
     </header>
 
     <main>
+        <!-- Bakgeschiedenis Sectie -->
+        <section id="history-section">
+            <h2>Recente Baksessies</h2>
+            <div id="history-list">
+                <!-- Wordt gevuld door JavaScript -->
+            </div>
+        </section>
+
         <!-- Ingrediënten Filter Sectie -->
         <section id="filter-section">
             <h2>Wat heb je in huis?</h2>
+
+            <!-- Geavanceerde filters -->
+            <div class="advanced-filters">
+                <div class="filter-row">
+                    <div class="filter-group">
+                        <label for="search-input">Zoeken:</label>
+                        <input type="text" id="search-input" placeholder="Zoek recept...">
+                    </div>
+                    <div class="filter-group">
+                        <label for="difficulty-filter">Moeilijkheid:</label>
+                        <select id="difficulty-filter">
+                            <option value="">Alle</option>
+                            <option value="Makkelijk">Makkelijk</option>
+                            <option value="Gemiddeld">Gemiddeld</option>
+                            <option value="Gevorderd">Gevorderd</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="time-filter">Max. tijd:</label>
+                        <select id="time-filter">
+                            <option value="">Alle</option>
+                            <option value="120">< 2 uur</option>
+                            <option value="180">< 3 uur</option>
+                            <option value="240">< 4 uur</option>
+                            <option value="480">< 8 uur</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-row">
+                    <label class="favorites-toggle">
+                        <input type="checkbox" id="favorites-filter">
+                        <span>❤️ Alleen favorieten tonen</span>
+                    </label>
+                </div>
+            </div>
+
             <div id="ingredient-filters">
                 <!-- Wordt gevuld door JavaScript -->
             </div>
             <div class="filter-actions">
                 <button id="filter-btn" class="btn btn-primary">Toon recepten</button>
                 <button id="reset-btn" class="btn btn-secondary">Reset filters</button>
+                <button id="random-btn" class="btn btn-accent">🎲 Verras me!</button>
             </div>
         </section>
 
         <!-- Recepten Overzicht -->
         <section id="recipes-section">
-            <h2>Recepten</h2>
+            <h2>Recepten <span id="recipe-count"></span></h2>
             <div id="recipes-grid">
                 <!-- Wordt gevuld door JavaScript -->
             </div>

@@ -1,4 +1,4 @@
-// Brood Recepten Database
+// Brood Recepten Database - Uitgebreid met 15 recepten
 const RECIPES = [
     {
         id: 1,
@@ -240,6 +240,143 @@ const RECIPES = [
         ],
         totalTime: 100,
         bakingTemp: 260
+    },
+    // 5 NIEUWE RECEPTEN
+    {
+        id: 11,
+        name: "Baguette",
+        description: "Knapperig Frans stokbrood met open kruim en krokante korst.",
+        difficulty: "Gemiddeld",
+        ingredients: [
+            { name: "tarwebloem", amount: 500, unit: "gram" },
+            { name: "water", amount: 350, unit: "ml" },
+            { name: "gist", amount: 5, unit: "gram" },
+            { name: "zout", amount: 10, unit: "gram" }
+        ],
+        steps: [
+            { action: "Meng bloem, water en gist", duration: 5 },
+            { action: "Autolyse rust", duration: 30, type: "rijzen" },
+            { action: "Voeg zout toe en kneed", duration: 10 },
+            { action: "Bulk fermentatie met folds elke 45 min", duration: 180, type: "rijzen" },
+            { action: "Verdeel in 3 delen en pre-shape", duration: 10 },
+            { action: "Rust 20 minuten", duration: 20, type: "rijzen" },
+            { action: "Vorm stokbroden en leg op baklinnen", duration: 15 },
+            { action: "Finale rijzing", duration: 60, type: "rijzen" },
+            { action: "Inkepen en bakken op 240°C met stoom", duration: 25, type: "bakken" }
+        ],
+        totalTime: 355,
+        bakingTemp: 240
+    },
+    {
+        id: 12,
+        name: "Challah",
+        description: "Gevlochten Joods feestbrood, rijk en zoet met mooie glans.",
+        difficulty: "Gemiddeld",
+        ingredients: [
+            { name: "tarwebloem", amount: 500, unit: "gram" },
+            { name: "water", amount: 120, unit: "ml" },
+            { name: "eieren", amount: 3, unit: "stuks" },
+            { name: "olijfolie", amount: 80, unit: "ml" },
+            { name: "suiker", amount: 60, unit: "gram" },
+            { name: "gist", amount: 10, unit: "gram" },
+            { name: "zout", amount: 8, unit: "gram" }
+        ],
+        steps: [
+            { action: "Meng bloem, gist en suiker", duration: 5 },
+            { action: "Voeg eieren, olie en water toe", duration: 5 },
+            { action: "Kneed tot glanzend, elastisch deeg", duration: 15 },
+            { action: "Eerste rijzing", duration: 90, type: "rijzen" },
+            { action: "Verdeel in strengen en vlecht", duration: 20 },
+            { action: "Tweede rijzing", duration: 45, type: "rijzen" },
+            { action: "Bestrijk met losgeklopt ei", duration: 5 },
+            { action: "Bakken op 180°C tot goudbruin", duration: 35, type: "bakken" }
+        ],
+        totalTime: 220,
+        bakingTemp: 180
+    },
+    {
+        id: 13,
+        name: "Havermoutbrood",
+        description: "Zacht en voedzaam brood met havermout, perfect voor ontbijt.",
+        difficulty: "Makkelijk",
+        ingredients: [
+            { name: "tarwebloem", amount: 400, unit: "gram" },
+            { name: "havermout", amount: 100, unit: "gram" },
+            { name: "water", amount: 300, unit: "ml" },
+            { name: "melk", amount: 50, unit: "ml" },
+            { name: "gist", amount: 7, unit: "gram" },
+            { name: "zout", amount: 8, unit: "gram" },
+            { name: "honing", amount: 30, unit: "gram" },
+            { name: "boter", amount: 30, unit: "gram" }
+        ],
+        steps: [
+            { action: "Week havermout in warm water (10 min)", duration: 10 },
+            { action: "Meng bloem, gist en zout", duration: 5 },
+            { action: "Voeg geweekte havermout, melk, honing en boter toe", duration: 5 },
+            { action: "Kneed tot soepel deeg", duration: 10 },
+            { action: "Eerste rijzing", duration: 60, type: "rijzen" },
+            { action: "Vorm in bakvorm, bestrooi met havervlokken", duration: 10 },
+            { action: "Tweede rijzing", duration: 45, type: "rijzen" },
+            { action: "Bakken op 190°C", duration: 40, type: "bakken" }
+        ],
+        totalTime: 185,
+        bakingTemp: 190
+    },
+    {
+        id: 14,
+        name: "Krentenbollen",
+        description: "Zoete broodjes met sappige krenten, heerlijk met boter.",
+        difficulty: "Makkelijk",
+        ingredients: [
+            { name: "tarwebloem", amount: 500, unit: "gram" },
+            { name: "melk", amount: 250, unit: "ml" },
+            { name: "boter", amount: 75, unit: "gram" },
+            { name: "suiker", amount: 75, unit: "gram" },
+            { name: "gist", amount: 10, unit: "gram" },
+            { name: "eieren", amount: 1, unit: "stuks" },
+            { name: "zout", amount: 5, unit: "gram" },
+            { name: "krenten", amount: 200, unit: "gram" }
+        ],
+        steps: [
+            { action: "Verwarm melk en smelt boter erin", duration: 5 },
+            { action: "Meng bloem, gist, suiker en zout", duration: 5 },
+            { action: "Voeg melkmengsel en ei toe, kneed", duration: 15 },
+            { action: "Voeg krenten toe en kneed door", duration: 5 },
+            { action: "Eerste rijzing", duration: 60, type: "rijzen" },
+            { action: "Verdeel in 12 bollen", duration: 10 },
+            { action: "Tweede rijzing", duration: 30, type: "rijzen" },
+            { action: "Bestrijk met ei, bakken op 200°C", duration: 20, type: "bakken" }
+        ],
+        totalTime: 150,
+        bakingTemp: 200
+    },
+    {
+        id: 15,
+        name: "Turks Brood (Pide)",
+        description: "Zacht, ovaal brood met sesamzaad, perfect bij mezze.",
+        difficulty: "Makkelijk",
+        ingredients: [
+            { name: "tarwebloem", amount: 500, unit: "gram" },
+            { name: "water", amount: 300, unit: "ml" },
+            { name: "yoghurt", amount: 50, unit: "gram" },
+            { name: "olijfolie", amount: 30, unit: "ml" },
+            { name: "gist", amount: 7, unit: "gram" },
+            { name: "suiker", amount: 10, unit: "gram" },
+            { name: "zout", amount: 8, unit: "gram" },
+            { name: "sesamzaad", amount: 20, unit: "gram" }
+        ],
+        steps: [
+            { action: "Meng bloem, gist, suiker en zout", duration: 5 },
+            { action: "Voeg water, yoghurt en olijfolie toe", duration: 5 },
+            { action: "Kneed tot soepel, elastisch deeg", duration: 10 },
+            { action: "Eerste rijzing", duration: 60, type: "rijzen" },
+            { action: "Verdeel en vorm ovale broden", duration: 15 },
+            { action: "Tweede rijzing", duration: 30, type: "rijzen" },
+            { action: "Bestrijk met ei en bestrooi met sesam", duration: 5 },
+            { action: "Bakken op 220°C", duration: 20, type: "bakken" }
+        ],
+        totalTime: 150,
+        bakingTemp: 220
     }
 ];
 
@@ -250,12 +387,12 @@ const ALL_INGREDIENTS = [...new Set(
     )
 )].sort();
 
-// Ingrediënten categorieën voor betere filtering
+// Ingrediënten categorieën voor betere filtering - uitgebreid
 const INGREDIENT_CATEGORIES = {
-    "Bloem & Meel": ["tarwebloem", "volkorenmeel", "roggemeel", "speltmeel"],
+    "Bloem & Meel": ["tarwebloem", "volkorenmeel", "roggemeel", "speltmeel", "havermout"],
     "Vloeistoffen": ["water", "melk", "olijfolie"],
     "Rijsmiddelen": ["gist", "zuurdesem"],
     "Zoetstoffen": ["suiker", "honing", "stroop"],
     "Zuivel & Eieren": ["boter", "eieren", "yoghurt"],
-    "Kruiden & Extras": ["zout", "rozemarijn", "karwijzaad"]
+    "Kruiden & Extras": ["zout", "rozemarijn", "karwijzaad", "krenten", "sesamzaad"]
 };
